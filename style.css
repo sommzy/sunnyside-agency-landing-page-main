@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
-/* body {
-    background-color: black;
-} */
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Barlow', sans-serif;
-    /* font-family: 'Fraunces', serif; */
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
-    /* background-repeat: no-repeat; */
+
     padding: 2rem 2rem;
     background-image: url(/desktop/image-header.jpg);
     height: 100vh;
@@ -26,16 +25,64 @@ header {
 
 }
 
-h1 {
+.sides {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sides img {
+    width: 50%;
+}
+
+.text-sides {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(212, 27%, 19%);
+    padding: 0rem 5.7rem;
+
+}
+
+.text-sides a {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 16px;
+    padding: 12px 10px;
+    font-weight: bold;
+}
+
+.text-sides a:hover {
+    border-radius: 10px;
+    color:white;
+    background-color: hsl(198, 62%, 26%);
+    transition: all 0.2s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fraunces', serif;
+}
+
+.h1 {
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+    font-size: 3.2rem;
     word-spacing: 12px;
     letter-spacing: 10px;
 }
 
 p {
     font-size: 18px;
+    color: hsl(232, 10%, 55%);
+    line-height: 1.5;
+    font-family: 'Barlow', sans-serif;
 }
 
 .first-list {
@@ -47,6 +94,7 @@ p {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     display: block;
+    font-family: 'Barlow', sans-serif;
     padding: 13px 25px;
 
 }
